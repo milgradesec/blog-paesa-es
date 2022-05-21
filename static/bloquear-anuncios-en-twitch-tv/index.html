@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" class="auto-color">
+<head>
+
+    <title>Bloquea todos los anuncios en Twitch.tv</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            --button-bg-color: #ffffff;
+            --button-text-color: var(--color-darkgrey);
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=3f90678385" />
+
+    <meta name="description" content="Bloquea todos los anuncios de los streams en Twitch.tv utilizando las funcionalidades avanzadas de Ublock Origin." />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://blog.paesa.es/bloquear-anuncios-en-twitch-tv/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Paesa Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bloquea todos los anuncios en Twitch.tv" />
+    <meta property="og:description" content="Bloquea todos los anuncios de los streams en Twitch.tv utilizando las funcionalidades avanzadas de Ublock Origin." />
+    <meta property="og:url" content="https://blog.paesa.es/bloquear-anuncios-en-twitch-tv/" />
+    <meta property="og:image" content="https://blog.paesa.es/content/images/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp" />
+    <meta property="article:published_time" content="2021-04-14T20:02:00.000Z" />
+    <meta property="article:modified_time" content="2022-05-20T14:44:12.000Z" />
+    <meta property="article:tag" content="anuncios" />
+    <meta property="article:tag" content="privacidad" />
+    <meta property="article:tag" content="publicidad" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bloquea todos los anuncios en Twitch.tv" />
+    <meta name="twitter:description" content="Bloquea todos los anuncios de los streams en Twitch.tv utilizando las funcionalidades avanzadas de Ublock Origin." />
+    <meta name="twitter:url" content="https://blog.paesa.es/bloquear-anuncios-en-twitch-tv/" />
+    <meta name="twitter:image" content="https://blog.paesa.es/content/images/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Daniel Paesa" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="anuncios, privacidad, publicidad" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1280" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Paesa Blog",
+        "url": "https://blog.paesa.es/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.paesa.es/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Daniel Paesa",
+        "url": "https://blog.paesa.es/author/daniel/",
+        "sameAs": []
+    },
+    "headline": "Bloquea todos los anuncios en Twitch.tv",
+    "url": "https://blog.paesa.es/bloquear-anuncios-en-twitch-tv/",
+    "datePublished": "2021-04-14T20:02:00.000Z",
+    "dateModified": "2022-05-20T14:44:12.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.paesa.es/content/images/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    "keywords": "anuncios, privacidad, publicidad",
+    "description": "Bloquear los anuncios en Twitch.tv no es tan sencillo como en otros sitios que\nsimplemente con instalar una extensión como Ublock Origin\n[https://github.com/gorhill/uBlock] es suficiente para deshacerse de ellos. \n\nTwitch.tv emplea varios mecanismos para detectar y evadir los bloqueadores de\nanuncios, como incluir el anuncio dentro de la emisión de video para dificultar\nsu identificación. Además si Twitch detecta que se están bloqueando mostrará una\npantalla morada durante la duración del anunci",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.paesa.es/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.47" />
+    <link rel="alternate" type="application/rss+xml" title="Paesa Blog" href="https://blog.paesa.es/rss/" />
+    
+    <script defer src="/public/cards.min.js?v=3f90678385"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=3f90678385">
+    <!-- Hide signup button -->
+<style>
+  a.gh-head-button {
+    display: none;
+  }
+</style><style>:root {--ghost-accent-color: #15171A;}</style>
+
+</head>
+<body class="post-template tag-anuncios tag-privacidad tag-publicidad">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head">
+        <nav class="gh-head-inner inner gh-container">
+
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="https://blog.paesa.es">
+                        Paesa Blog
+                </a>
+                <a class="gh-burger" role="button">
+                    <div class="gh-burger-box">
+                        <div class="gh-burger-inner"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-inicio"><a href="https://blog.paesa.es/">Inicio</a></li>
+    <li class="nav-contacto"><a href="https://blog.paesa.es/contacto/">Contacto</a></li>
+    <li class="nav-github"><a href="https://github.com/milgradesec">GitHub</a></li>
+</ul>
+
+            </div>
+            <div class="gh-head-actions">
+                <div class="gh-social">
+                </div>
+
+                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="site-content">
+        
+
+
+
+<main id="site-main" class="site-main">
+    <article class="article post tag-anuncios tag-privacidad tag-publicidad image-small">
+
+        <header class="article-header gh-canvas">
+
+            <section class="article-tag">
+                <a href="https://blog.paesa.es/tag/anuncios/">anuncios</a>
+            </section>
+
+            <h1 class="article-title">Bloquea todos los anuncios en Twitch.tv</h1>
+
+
+            <div class="article-byline">
+                <section class="article-byline-content">
+                    <ul class="author-list">
+                        <li class="author-list-item">
+                            <a href="/author/daniel/" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                        </li>
+                    </ul>
+                    <div class="article-byline-meta">
+                        <h4 class="author-name"><a href="/author/daniel/">Daniel Paesa</a></h4>
+                        <div class="byline-meta-content">
+                            <time class="byline-meta-date" datetime="2021-04-14">14 de abr. de 2021</time>
+                            <span class="byline-reading-time"><span class="bull">&bull;</span> 2 min read</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <figure class="article-image">
+                <img
+                    srcset="/content/images/size/w300/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp 300w,
+                            /content/images/size/w600/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp 600w,
+                            /content/images/size/w1000/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp 1000w,
+                            /content/images/size/w2000/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="/content/images/size/w2000/2022/05/caspar-camille-rubin-DrL-cwqD6tM-unsplash-1.webp"
+                    alt="Bloquea todos los anuncios en Twitch.tv"
+                />
+            </figure>
+        </header>
+
+        <section class="gh-content gh-canvas">
+            <p>Bloquear los anuncios en Twitch.tv no es tan sencillo como en otros sitios que simplemente con instalar una extensión como <a href="https://github.com/gorhill/uBlock">Ublock Origin</a> es suficiente para deshacerse de ellos. </p><p>Twitch.tv emplea varios mecanismos para detectar y evadir los bloqueadores de anuncios, como incluir el anuncio dentro de la emisión de video para dificultar su identificación. Además si Twitch detecta que se están bloqueando mostrará una pantalla morada durante la duración del anuncio que impide ver el stream y pide al usuario que elimine todo el software que interfiera con el sitio.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/How-will-Twitch-_Purple-screen-of-death_-affect-the-streaming-industry_.webp" class="kg-image" alt="Pantalla morada que muestra Twitch.tv cuando detecta que utilizas un bloqueador de anuncios" loading="lazy" width="843" height="476" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/How-will-Twitch-_Purple-screen-of-death_-affect-the-streaming-industry_.webp 600w, https://blog.paesa.es/content/images/2022/05/How-will-Twitch-_Purple-screen-of-death_-affect-the-streaming-industry_.webp 843w" sizes="(min-width: 720px) 720px"><figcaption>Pantalla que muestra Twitch al detectar un Ad-Blocker</figcaption></figure><p>Voy a mostrar un método que elimina los anuncios y el aviso morado, recuerdo que Twitch intenta de forma agresiva anular o inutilizar todas las formas que utilizan los usuarios para bloquear sus anuncios y este método puede dejar de funcionar en el futuro.</p><p>Primero es necesario tener instalada la extensión <a href="https://github.com/gorhill/uBlock">Ublock Origin</a> y activar las opciones avanzadas.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/Captura-de-pantalla-2021-04-14-214012.webp" class="kg-image" alt="Configuración avanzada de Ublock Origin" loading="lazy" width="884" height="704" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/Captura-de-pantalla-2021-04-14-214012.webp 600w, https://blog.paesa.es/content/images/2022/05/Captura-de-pantalla-2021-04-14-214012.webp 884w" sizes="(min-width: 720px) 720px"><figcaption>Habilita las opciones avanzadas</figcaption></figure><p>Accede a las opciones avanzadas dando click a los engranajes que hay al final de "Soy un usuario avanzado".</p><p>Busca la propiedad <strong>userResourcesLocation</strong> y cambia <strong>unset </strong>por la siguiente url:</p><!--kg-card-begin: markdown--><pre><code>https://github.com/pixeltris/TwitchAdSolutions/raw/master/notify-strip/notify-strip-ublock-origin.js
+</code></pre>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/Captura-de-pantalla-2021-04-14-215407.webp" class="kg-image" alt="Ventana con las opciones avanzadas de Ublock Origin" loading="lazy" width="1075" height="383" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/Captura-de-pantalla-2021-04-14-215407.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/Captura-de-pantalla-2021-04-14-215407.webp 1000w, https://blog.paesa.es/content/images/2022/05/Captura-de-pantalla-2021-04-14-215407.webp 1075w" sizes="(min-width: 720px) 720px"></figure><p>Ahora ve a la pestaña de Mis filtros y añade esto en una nueva línea:</p><!--kg-card-begin: markdown--><p><strong>twitch.tv##+js(twitch-videoad)</strong></p>
+<!--kg-card-end: markdown--><p>Hemos configurado <a href="https://github.com/gorhill/uBlock">Ublock Origin</a> para que cargue un código Javascript en Twitch.tv, este script remplaza los segmentos del stream que contienen anuncios y engaña a Twitch indicando que los esta viendo correctamente.</p><p>Para terminar reinicia el navegador y disfruta de los streams sin anuncios.</p>
+        </section>
+
+
+    </article>
+</main>
+
+
+
+
+            <aside class="read-more-wrap">
+                <div class="read-more inner">
+                        
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="/evadir-censura-snowflake/">
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2022/05/snowflake-schematic.webp 300w,
+                    /content/images/size/w600/2022/05/snowflake-schematic.webp 600w,
+                    /content/images/size/w1000/2022/05/snowflake-schematic.webp 1000w,
+                    /content/images/size/w2000/2022/05/snowflake-schematic.webp 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2022/05/snowflake-schematic.webp"
+            alt="Ayuda a evadir la censura en Internet con Snowflake"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/evadir-censura-snowflake/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Ayuda a evadir la censura en Internet con Snowflake</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>La censura en Internet mediante el bloqueo o la limitación del acceso al contenido online es una tendencia creciente especialmente en países con gobiernos autocráticos o totalitarias como una forma de controlar el discurso político y minar los esfuerzos de disidentes y periodistas. China, Irán, Rusia o Turquía son ejemplos</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
+                <span class="post-card-byline-date"><time datetime="2022-03-04">4 de mar. de 2022</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="/copias-de-seguridad-cifradas-en-whatsapp/">
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 300w,
+                    /content/images/size/w600/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 600w,
+                    /content/images/size/w1000/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 1000w,
+                    /content/images/size/w2000/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp"
+            alt="Copias de seguridad en WhatsApp cifradas de extremo a extremo"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/copias-de-seguridad-cifradas-en-whatsapp/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Copias de seguridad en WhatsApp cifradas de extremo a extremo</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>En septiembre de 2021, Facebook, ahora llamado Meta y propietario de Whatsapp LLC anunció que implementaría copias de seguridad de los chats de Whatsapp con cifrado de extremo a extremo (E2EE).  Desde 2015 Whatsapp cifra todos los mensajes que envían los usuarios utilizando E2EE, eso significa que cada mensaje es</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
+                <span class="post-card-byline-date"><time datetime="2022-02-08">8 de feb. de 2022</time> <span class="bull">&bull;</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="/dns-seguro-en-android/">
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2022/05/android-dot.webp 300w,
+                    /content/images/size/w600/2022/05/android-dot.webp 600w,
+                    /content/images/size/w1000/2022/05/android-dot.webp 1000w,
+                    /content/images/size/w2000/2022/05/android-dot.webp 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2022/05/android-dot.webp"
+            alt="Activa el DNS Privado en Android"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/dns-seguro-en-android/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Activa el DNS Privado en Android</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>El protocolo DNS (Domain Name System) es un pilar fundamental de Internet que traduce los nombres de dominio como google.com o twitter.com a direcciones IP como 142.250.178.174 o 104.244.42.1. ¿Qué es el DNS?Todos los dispositivos conectados a Internet (o cualquier red)</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
+                <span class="post-card-byline-date"><time datetime="2022-01-09">9 de ene. de 2022</time> <span class="bull">&bull;</span> 3 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                </div>
+            </aside>
+
+
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://blog.paesa.es">Paesa Blog</a> &copy; 2022</section>
+            <nav class="site-footer-nav">
+                
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=3f90678385"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+
+
+
+</body>
+</html>

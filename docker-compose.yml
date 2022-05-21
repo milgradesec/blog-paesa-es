@@ -1,0 +1,28 @@
+name: blog-paesa-es
+
+services:
+  ghost:
+    image: ghost:4.47.4
+    environment:
+      - logging__level=error
+      - logging__transports=["stdout"]
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 2368
+        published: "2368"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: data
+        target: /var/lib/ghost/content
+        volume: {}
+
+networks:
+  default:
+    name: blog-paesa-es_default
+
+volumes:
+  data:
+    name: blog-paesa-es_data
