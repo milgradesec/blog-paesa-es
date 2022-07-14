@@ -2,7 +2,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer-when-downgrade
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' code.jquery.com unpkg.com cdn.ampproject.org ajax.cloudflare.com static.cloudflareinsights.com; media-src 'self' ghost.org; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline' unpkg.com fonts.googleapis.com; img-src 'self' data: blob: static.ghost.org ghost.org images.unsplash.com img.spacergif.org; connect-src 'self' ghost.org cdn.jsdelivr.net cloudflareinsights.com; form-action 'self'; object-src 'none'; frame-src 'self' *.ghost.io; frame-ancestors 'self'; upgrade-insecure-requests; sandbox allow-same-origin allow-scripts allow-popups allow-downloads; report-uri https://paesa.report-uri.com/r/d/csp/enforce
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' code.jquery.com unpkg.com cdn.ampproject.org ajax.cloudflare.com static.cloudflareinsights.com; media-src 'self' ghost.org; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline' unpkg.com fonts.googleapis.com; img-src 'self' data: blob: static.ghost.org ghost.org images.unsplash.com img.spacergif.org; connect-src 'self' ghost.org cdn.jsdelivr.net cloudflareinsights.com; form-action 'self'; object-src 'none'; frame-src 'self' *.ghost.io; frame-ancestors 'self'; upgrade-insecure-requests; sandbox allow-same-origin allow-scripts allow-popups allow-downloads; report-uri https://paesa.report-uri.com/r/d/csp/enforce
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
