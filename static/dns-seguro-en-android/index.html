@@ -8,17 +8,10 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        :root {
-            --button-bg-color: #ffffff;
-            --button-text-color: var(--color-darkgrey);
-        }
-    </style>
-
     <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
 
     <meta name="description" content="Activa el DNS Privado en Android para tener conexiones más seguras y privadas en Internet." />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="https://blog.paesa.es/content/images/size/w256h256/2022/05/favicon.png" type="image/png" />
     <link rel="canonical" href="https://blog.paesa.es/dns-seguro-en-android/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
@@ -56,7 +49,7 @@
         "url": "https://blog.paesa.es/",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://blog.paesa.es/favicon.png",
+            "url": "https://blog.paesa.es/content/images/size/w256h256/2022/05/favicon.png",
             "width": 60,
             "height": 60
         }
@@ -86,9 +79,10 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.48" />
+    <meta name="generator" content="Ghost 5.8" />
     <link rel="alternate" type="application/rss+xml" title="Paesa Blog" href="https://blog.paesa.es/rss/" />
     
+    <script defer src="https://cdn.jsdelivr.net/npm/@tryghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="bc186818b9f6ec7624061ad620" data-styles="https://cdn.jsdelivr.net/npm/@tryghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://blog.paesa.es/" crossorigin="anonymous"></script>
     <script defer src="/public/cards.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/public/cards.min.css">
     <!-- Hide signup button -->
@@ -102,18 +96,21 @@
 <body class="post-template tag-android tag-privacidad tag-seguridad">
 <div class="viewport">
 
-    <header id="gh-head" class="gh-head">
-        <nav class="gh-head-inner inner gh-container">
+    <header id="gh-head" class="gh-head outer">
+        <nav class="gh-head-inner inner">
 
             <div class="gh-head-brand">
-                <a class="gh-head-logo" href="https://blog.paesa.es">
+                <a class="gh-head-logo no-image" href="https://blog.paesa.es">
                         Paesa Blog
                 </a>
-                <a class="gh-burger" role="button">
-                    <div class="gh-burger-box">
-                        <div class="gh-burger-inner"></div>
-                    </div>
-                </a>
+                <div class="gh-head-brand-wrapper">
+                    <button class="gh-search" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                    <a class="gh-burger" role="button">
+                        <div class="gh-burger-box">
+                            <div class="gh-burger-inner"></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="gh-head-menu">
                 <ul class="nav">
@@ -124,10 +121,9 @@
 
             </div>
             <div class="gh-head-actions">
+                <button class="gh-search" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
                 <div class="gh-social">
                 </div>
-
-                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
             </div>
         </nav>
     </header>
@@ -138,34 +134,39 @@
 
 
 <main id="site-main" class="site-main">
-    <article class="article post tag-android tag-privacidad tag-seguridad image-small">
+<article class="article post tag-android tag-privacidad tag-seguridad image-small">
 
-        <header class="article-header gh-canvas">
+    <header class="article-header gh-canvas">
 
-            <section class="article-tag">
-                <a href="https://blog.paesa.es/tag/android/">android</a>
-            </section>
+        <div class="article-tag post-card-tags">
+                <span class="post-card-primary-tag">
+                    <a href="/tag/android/">android</a>
+                </span>
+        </div>
 
-            <h1 class="article-title">Activa el DNS Privado en Android</h1>
+        <h1 class="article-title">Activa el DNS Privado en Android</h1>
 
 
-            <div class="article-byline">
-                <section class="article-byline-content">
-                    <ul class="author-list">
-                        <li class="author-list-item">
-                            <a href="/author/daniel/" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+        <div class="article-byline">
+        <section class="article-byline-content">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/daniel/" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
 </a>
-                        </li>
-                    </ul>
-                    <div class="article-byline-meta">
-                        <h4 class="author-name"><a href="/author/daniel/">Daniel Paesa</a></h4>
-                        <div class="byline-meta-content">
-                            <time class="byline-meta-date" datetime="2022-01-09">9 de ene. de 2022</time>
-                            <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
-                        </div>
-                    </div>
-                </section>
+                </li>
+            </ul>
+
+            <div class="article-byline-meta">
+                <h4 class="author-name"><a href="/author/daniel/">Daniel Paesa</a></h4>
+                <div class="byline-meta-content">
+                    <time class="byline-meta-date" datetime="2022-01-09">9 de ene. de 2022</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
+                </div>
             </div>
+
+        </section>
+        </div>
 
             <figure class="article-image">
                 <img
@@ -178,10 +179,11 @@
                     alt="Activa el DNS Privado en Android"
                 />
             </figure>
-        </header>
 
-        <section class="gh-content gh-canvas">
-            <p>El protocolo DNS (Domain Name System) es un pilar fundamental de Internet que traduce los nombres de dominio como google.com o twitter.com a direcciones IP como 142.250.178.174 o 104.244.42.1.</p><h3 id="%C2%BFqu%C3%A9-es-el-dns">¿Qué es el DNS?</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/dns-agenda.webp" class="kg-image" alt loading="lazy" width="1400" height="800" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/dns-agenda.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/dns-agenda.webp 1000w, https://blog.paesa.es/content/images/2022/05/dns-agenda.webp 1400w" sizes="(min-width: 720px) 720px"></figure><p>Todos los dispositivos conectados a Internet (o cualquier red) se identifican con una dirección IP única que otros utilizan para encontrarlo, sin embargo, utilizar direcciones IP para referirse a los distintos dispositivos o recursos en una red introduce varios inconvenientes y limitaciones, son muy difíciles de utilizar y recordar para un ser humano.</p><p>El sistema DNS funciona como una agenda de contactos para todas las direcciones de Internet que traduce nombres alfanuméricos fáciles de utilizar por los humanos pero que no aportan la información que necesita una máquina para saber a donde tiene que comunicarse, a una dirección en el protocolo IP utilizado por todos los dispositivos y routers para saber como tienen que transmitir la información para que llegue al destinatario.</p><p>Prácticamente todas las comunicaciones en Internet empiezan con una consulta DNS, visitar cualquier sitio web, ver un vídeo en Netflix, enviar un mensaje por WhatsApp, descargar una aplicación... Lo primero que hace tu dispositivo es una consulta a un servidor DNS (proporcionado por tu proveedor de Internet) para saber la dirección IP de ese sitio o servicio y así poder establecer una conexión y transmitir y recibir información.</p><h3 id="seguridad-en-el-protocolo-dns">Seguridad en el protocolo DNS</h3><p>El protocolo DNS se remonta a los inicios de Internet en los años 80, eso significa que la seguridad e integridad de la información no fueron consideradas al diseñar el protocolo ya que se creo para facilitar el uso de esas primeras redes en centros de investigación y universidades. Nunca se pensó en el crecimiento y la escala global que iban a tener esas tecnologías en las próximas décadas, la dependencia que tendrían las comunicaciones, economía y la sociedad en general en su correcto funcionamiento.</p><p>La comunicación entre un cliente (tu dispositivo) y un servidor DNS se realiza en plano, es decir, no utiliza ningún tipo de cifrado ni autenticación para garantizar que la información no puede ser vista o alterada por un atacante situado entre ambos.</p><p>Mientras que otros protocolos como HTTP (utilizado para transmitir páginas web) ha incluido una capa de cifrado y autenticación de datos que da lugar a HTTPS –ahora ya omnipresente–  DNS se ha quedado atrás durante años. </p><h3 id="dns-sobre-tls">DNS sobre TLS</h3><p>DNS sobre TLS es un nuevo protocolo que encapsula las peticiones DNS en una capa de seguridad con cifrado y autenticación de datos. Incluido en Android desde Android 9 (Pie), es muy sencillo de configurar y activar para tener una conexión más segura.</p><p>La ubicación exacta del ajuste para configurar el DNS privado puede variar ligeramente dependiendo de la versión y el fabricante del dispositivo.</p><p>Primero ves a la aplicación de <strong>Ajustes </strong>y entra a la sección <strong>Conexión y Compartir</strong>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/1641619176643--Small.webp" class="kg-image" alt loading="lazy" width="424" height="574"><figcaption>Menú Ajustes del sistema</figcaption></figure><p>Ahí encontraras la opción <strong>DNS privado.</strong></p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/1641619176636--Small.webp" class="kg-image" alt loading="lazy" width="360" height="600"><figcaption>Opción de DNS Privado</figcaption></figure><p>Si no te aparece la opción <strong>DNS privado</strong> seguramente tu dispositivo sea un Android anterior a la versión 9.</p><p><strong>DNS Privado</strong> tiene tres modos de funcionamiento:</p><!--kg-card-begin: markdown--><ul>
+    </header>
+
+    <section class="gh-content gh-canvas">
+        <p>El protocolo DNS (Domain Name System) es un pilar fundamental de Internet que traduce los nombres de dominio como google.com o twitter.com a direcciones IP como 142.250.178.174 o 104.244.42.1.</p><h3 id="%C2%BFqu%C3%A9-es-el-dns">¿Qué es el DNS?</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/dns-agenda.webp" class="kg-image" alt loading="lazy" width="1400" height="800" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/dns-agenda.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/dns-agenda.webp 1000w, https://blog.paesa.es/content/images/2022/05/dns-agenda.webp 1400w" sizes="(min-width: 720px) 720px"></figure><p>Todos los dispositivos conectados a Internet (o cualquier red) se identifican con una dirección IP única que otros utilizan para encontrarlo, sin embargo, utilizar direcciones IP para referirse a los distintos dispositivos o recursos en una red introduce varios inconvenientes y limitaciones, son muy difíciles de utilizar y recordar para un ser humano.</p><p>El sistema DNS funciona como una agenda de contactos para todas las direcciones de Internet que traduce nombres alfanuméricos fáciles de utilizar por los humanos pero que no aportan la información que necesita una máquina para saber a donde tiene que comunicarse, a una dirección en el protocolo IP utilizado por todos los dispositivos y routers para saber como tienen que transmitir la información para que llegue al destinatario.</p><p>Prácticamente todas las comunicaciones en Internet empiezan con una consulta DNS, visitar cualquier sitio web, ver un vídeo en Netflix, enviar un mensaje por WhatsApp, descargar una aplicación... Lo primero que hace tu dispositivo es una consulta a un servidor DNS (proporcionado por tu proveedor de Internet) para saber la dirección IP de ese sitio o servicio y así poder establecer una conexión y transmitir y recibir información.</p><h3 id="seguridad-en-el-protocolo-dns">Seguridad en el protocolo DNS</h3><p>El protocolo DNS se remonta a los inicios de Internet en los años 80, eso significa que la seguridad e integridad de la información no fueron consideradas al diseñar el protocolo ya que se creo para facilitar el uso de esas primeras redes en centros de investigación y universidades. Nunca se pensó en el crecimiento y la escala global que iban a tener esas tecnologías en las próximas décadas, la dependencia que tendrían las comunicaciones, economía y la sociedad en general en su correcto funcionamiento.</p><p>La comunicación entre un cliente (tu dispositivo) y un servidor DNS se realiza en plano, es decir, no utiliza ningún tipo de cifrado ni autenticación para garantizar que la información no puede ser vista o alterada por un atacante situado entre ambos.</p><p>Mientras que otros protocolos como HTTP (utilizado para transmitir páginas web) ha incluido una capa de cifrado y autenticación de datos que da lugar a HTTPS –ahora ya omnipresente–  DNS se ha quedado atrás durante años. </p><h3 id="dns-sobre-tls">DNS sobre TLS</h3><p>DNS sobre TLS es un nuevo protocolo que encapsula las peticiones DNS en una capa de seguridad con cifrado y autenticación de datos. Incluido en Android desde Android 9 (Pie), es muy sencillo de configurar y activar para tener una conexión más segura.</p><p>La ubicación exacta del ajuste para configurar el DNS privado puede variar ligeramente dependiendo de la versión y el fabricante del dispositivo.</p><p>Primero ves a la aplicación de <strong>Ajustes </strong>y entra a la sección <strong>Conexión y Compartir</strong>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/1641619176643--Small.webp" class="kg-image" alt loading="lazy" width="424" height="574"><figcaption>Menú Ajustes del sistema</figcaption></figure><p>Ahí encontraras la opción <strong>DNS privado.</strong></p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/1641619176636--Small.webp" class="kg-image" alt loading="lazy" width="360" height="600"><figcaption>Opción de DNS Privado</figcaption></figure><p>Si no te aparece la opción <strong>DNS privado</strong> seguramente tu dispositivo sea un Android anterior a la versión 9.</p><p><strong>DNS Privado</strong> tiene tres modos de funcionamiento:</p><!--kg-card-begin: markdown--><ul>
 <li>Desactivado: Desactiva el uso de DNS sobre TLS.</li>
 <li>Automático: Utiliza DNS sobre TLS si tu proveedor actual (de Internet) lo soporta.</li>
 <li>Nombre de host del proveedor de DNS privado: Te permite especificar un proveedor que soporte DNS sobre TLS.</li>
@@ -192,21 +194,22 @@
 <li>Cloudflare --&gt; one.one.one.one</li>
 </ul>
 <!--kg-card-end: markdown--><p>Cloudflare tiene la <a href="https://www.cloudflare.com/network/">red más grande</a> (&gt;200 servidores por todo el mundo) y su servicio DNS es el más rápido. Ah, y no está en el negocio de los datos personales como Google.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://blog.paesa.es/content/images/2022/05/164053965792.webp" class="kg-image" alt loading="lazy" width="424" height="600"><figcaption>Configurar DNS de Cloudflare</figcaption></figure><p>Al activarlo todo el tráfico DNS que envíe tu dispositivo estará protegido.</p>
-        </section>
+    </section>
 
 
-    </article>
+</article>
 </main>
 
 
 
 
-            <aside class="read-more-wrap">
+            <aside class="read-more-wrap outer">
                 <div class="read-more inner">
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/evadir-censura-snowflake/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/snowflake-schematic.webp 300w,
                     /content/images/size/w600/2022/05/snowflake-schematic.webp 600w,
@@ -217,39 +220,41 @@
             alt="Ayuda a evadir la censura en Internet con Snowflake"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/evadir-censura-snowflake/">
             <header class="post-card-header">
-                <h2 class="post-card-title">Ayuda a evadir la censura en Internet con Snowflake</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Ayuda a evadir la censura en Internet con Snowflake
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>La censura en Internet mediante el bloqueo o la limitación del acceso al contenido online es una tendencia creciente especialmente en países con gobiernos autocráticos o totalitarias como una forma de controlar el discurso político y minar los esfuerzos de disidentes y periodistas. China, Irán, Rusia o Turquía son ejemplos</p>
-            </div>
+                <div class="post-card-excerpt">La censura en Internet mediante el bloqueo o la limitación del acceso al
+contenido online es una tendencia creciente especialmente en países con
+gobiernos autocráticos o totalitarias como una forma de controlar el discurso
+político y minar los esfuerzos de disidentes y periodistas. China, Irán, Rusia o
+Turquía son ejemplos</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2022-03-04">4 de mar. de 2022</time> <span class="bull">&bull;</span> 2 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2022-03-04">4 de mar. de 2022</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">2 min read</span>
         </footer>
 
     </div>
 
 </article>
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/copias-de-seguridad-cifradas-en-whatsapp/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 300w,
                     /content/images/size/w600/2022/05/alexander-shatov-_qsuER9xYOY-unsplash-2.webp 600w,
@@ -260,39 +265,42 @@
             alt="Copias de seguridad en WhatsApp cifradas de extremo a extremo"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/copias-de-seguridad-cifradas-en-whatsapp/">
             <header class="post-card-header">
-                <h2 class="post-card-title">Copias de seguridad en WhatsApp cifradas de extremo a extremo</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Copias de seguridad en WhatsApp cifradas de extremo a extremo
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>En septiembre de 2021, Facebook, ahora llamado Meta y propietario de Whatsapp LLC anunció que implementaría copias de seguridad de los chats de Whatsapp con cifrado de extremo a extremo (E2EE).  Desde 2015 Whatsapp cifra todos los mensajes que envían los usuarios utilizando E2EE, eso significa que cada mensaje es</p>
-            </div>
+                <div class="post-card-excerpt">En septiembre de 2021, Facebook, ahora llamado Meta y propietario de Whatsapp
+LLC anunció que implementaría copias de seguridad de los chats de Whatsapp con
+cifrado de extremo a extremo (E2EE). 
+
+Desde 2015 Whatsapp cifra todos los mensajes que envían los usuarios utilizando
+E2EE, eso significa que cada mensaje es</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2022-02-08">8 de feb. de 2022</time> <span class="bull">&bull;</span> 4 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2022-02-08">8 de feb. de 2022</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">4 min read</span>
         </footer>
 
     </div>
 
 </article>
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/newpipe-youtube-anuncios/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/alexander-shatov-niUkImZcSP8-unsplash.webp 300w,
                     /content/images/size/w600/2022/05/alexander-shatov-niUkImZcSP8-unsplash.webp 600w,
@@ -303,30 +311,33 @@
             alt="NewPipe - Más YouTube y menos anuncios"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/newpipe-youtube-anuncios/">
             <header class="post-card-header">
-                <h2 class="post-card-title">NewPipe - Más YouTube y menos anuncios</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    NewPipe - Más YouTube y menos anuncios
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>YouTube es de los servicios más utilizados para ver contenido en Internet, cada día se visualizan millones de horas –muchas de ellas anuncios– de contenido en la plataforma en todo el mundo. ¿Qué es NewPipe?NewPipe es un cliente alternativo gratuito y código abierto para YouTube en Android. Ofrece muchas</p>
-            </div>
+                <div class="post-card-excerpt">YouTube es de los servicios más utilizados para ver contenido en Internet, cada
+día se visualizan millones de horas –muchas de ellas anuncios– de contenido en
+la plataforma en todo el mundo.
+
+¿Qué es NewPipe?
+NewPipe es un cliente alternativo gratuito y código abierto para YouTube en
+Android. Ofrece muchas</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2021-12-22">22 de dic. de 2021</time> <span class="bull">&bull;</span> 2 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2021-12-22">22 de dic. de 2021</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">2 min read</span>
         </footer>
 
     </div>

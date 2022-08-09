@@ -8,17 +8,10 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        :root {
-            --button-bg-color: #ffffff;
-            --button-text-color: var(--color-darkgrey);
-        }
-    </style>
-
     <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
 
     <meta name="description" content="Activa las copias de seguridad cifradas de extremo a extremo de los chats de Whatsapp para tener un respaldo seguro y privado en la nube." />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="https://blog.paesa.es/content/images/size/w256h256/2022/05/favicon.png" type="image/png" />
     <link rel="canonical" href="https://blog.paesa.es/copias-de-seguridad-cifradas-en-whatsapp/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
@@ -54,7 +47,7 @@
         "url": "https://blog.paesa.es/",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://blog.paesa.es/favicon.png",
+            "url": "https://blog.paesa.es/content/images/size/w256h256/2022/05/favicon.png",
             "width": 60,
             "height": 60
         }
@@ -84,9 +77,10 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.48" />
+    <meta name="generator" content="Ghost 5.8" />
     <link rel="alternate" type="application/rss+xml" title="Paesa Blog" href="https://blog.paesa.es/rss/" />
     
+    <script defer src="https://cdn.jsdelivr.net/npm/@tryghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="bc186818b9f6ec7624061ad620" data-styles="https://cdn.jsdelivr.net/npm/@tryghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://blog.paesa.es/" crossorigin="anonymous"></script>
     <script defer src="/public/cards.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/public/cards.min.css">
     <!-- Hide signup button -->
@@ -100,18 +94,21 @@
 <body class="post-template tag-privacidad">
 <div class="viewport">
 
-    <header id="gh-head" class="gh-head">
-        <nav class="gh-head-inner inner gh-container">
+    <header id="gh-head" class="gh-head outer">
+        <nav class="gh-head-inner inner">
 
             <div class="gh-head-brand">
-                <a class="gh-head-logo" href="https://blog.paesa.es">
+                <a class="gh-head-logo no-image" href="https://blog.paesa.es">
                         Paesa Blog
                 </a>
-                <a class="gh-burger" role="button">
-                    <div class="gh-burger-box">
-                        <div class="gh-burger-inner"></div>
-                    </div>
-                </a>
+                <div class="gh-head-brand-wrapper">
+                    <button class="gh-search" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                    <a class="gh-burger" role="button">
+                        <div class="gh-burger-box">
+                            <div class="gh-burger-inner"></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="gh-head-menu">
                 <ul class="nav">
@@ -122,10 +119,9 @@
 
             </div>
             <div class="gh-head-actions">
+                <button class="gh-search" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
                 <div class="gh-social">
                 </div>
-
-                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
             </div>
         </nav>
     </header>
@@ -136,34 +132,39 @@
 
 
 <main id="site-main" class="site-main">
-    <article class="article post tag-privacidad image-small">
+<article class="article post tag-privacidad image-small">
 
-        <header class="article-header gh-canvas">
+    <header class="article-header gh-canvas">
 
-            <section class="article-tag">
-                <a href="https://blog.paesa.es/tag/privacidad/">privacidad</a>
-            </section>
+        <div class="article-tag post-card-tags">
+                <span class="post-card-primary-tag">
+                    <a href="/tag/privacidad/">privacidad</a>
+                </span>
+        </div>
 
-            <h1 class="article-title">Copias de seguridad en WhatsApp cifradas de extremo a extremo</h1>
+        <h1 class="article-title">Copias de seguridad en WhatsApp cifradas de extremo a extremo</h1>
 
 
-            <div class="article-byline">
-                <section class="article-byline-content">
-                    <ul class="author-list">
-                        <li class="author-list-item">
-                            <a href="/author/daniel/" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+        <div class="article-byline">
+        <section class="article-byline-content">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/daniel/" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
 </a>
-                        </li>
-                    </ul>
-                    <div class="article-byline-meta">
-                        <h4 class="author-name"><a href="/author/daniel/">Daniel Paesa</a></h4>
-                        <div class="byline-meta-content">
-                            <time class="byline-meta-date" datetime="2022-02-08">8 de feb. de 2022</time>
-                            <span class="byline-reading-time"><span class="bull">&bull;</span> 4 min read</span>
-                        </div>
-                    </div>
-                </section>
+                </li>
+            </ul>
+
+            <div class="article-byline-meta">
+                <h4 class="author-name"><a href="/author/daniel/">Daniel Paesa</a></h4>
+                <div class="byline-meta-content">
+                    <time class="byline-meta-date" datetime="2022-02-08">8 de feb. de 2022</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 4 min read</span>
+                </div>
             </div>
+
+        </section>
+        </div>
 
             <figure class="article-image">
                 <img
@@ -176,25 +177,27 @@
                     alt="Copias de seguridad en WhatsApp cifradas de extremo a extremo"
                 />
             </figure>
-        </header>
 
-        <section class="gh-content gh-canvas">
-            <p>En septiembre de 2021, Facebook, ahora llamado Meta y propietario de Whatsapp LLC anunció que implementaría copias de seguridad de los chats de Whatsapp con cifrado de extremo a extremo (E2EE). </p><p>Desde 2015 Whatsapp cifra todos los mensajes que envían los usuarios utilizando E2EE, eso significa que cada mensaje es cifrado en el dispositivo del emisor con una clave que pertenece al receptor y solo él puede descifrarlo, esto otorga unos grandes beneficios en seguridad y privacidad a los usuarios ya que un tercero, sea este Whatsapp, Facebook, Meta o quien sea no puede ver el contenido de los mensajes aunque estos pasen por sus servidores.</p><p>Una funcionalidad que ofrecen muchas apps de mensajería como Whatsapp es hacer copias de seguridad de los mensajes de tu dispositivo para que en caso de pérdida o daño puedas recuperar todas las conversaciones. Para esto utiliza el servicio de almacenamiento en la nube que ofrece cada plataforma móvil, Google Drive en Android y iCloud en iOS. También hay un acuerdo entre Whatsapp y estos servicios para que esas copias de seguridad no cuenten como espacio utilizado en tu cuenta de Drive o iCloud. Eso está muy bien ¿No?</p><p>Sí, pero tiene un problema de diseño, esa copia de seguridad que se almacena fuera de tu dispositivo <strong>NO</strong> está cifrada.</p><p>A final de 2021, Whatsapp anunció que esta funcionalidad ya estaba lista e iría activando esa opción a los usuarios de forma progresiva.</p><h2 id="%C2%BFpor-qu%C3%A9-deber%C3%ADa-activar-las-copias-de-seguridad-cifradas">¿Por qué debería activar las copias de seguridad cifradas? </h2><p>Mayor seguridad y privacidad son las principales razones, los chats y conversaciones suelen contener mucha información privada o sensible que seguro que quieres mantener protegida. Conversaciones con amigos, familiares, parejas... dentro de ellas puedes encontrarte recibos, documentos (DNI o similar), incluso fotos íntimas (sí, hay gente que manda eso). Eso permitiría a un ciberdelincuente poder suplantar tu identidad o chantajearte con hacer públicas conversaciones y/o fotos privadas.</p><p> Seguro que has oído casos de personalidades famosas que han acabado con conversaciones privadas o fotos íntimas publicadas en la red. ¿Cómo acabaron en manos de un delincuente? Muy sencillo, accedieron a sus cuentas de iCloud utilizando un ataque de phishing (una web o email haciéndose pasar por esa empresa y engañar al usuario para que introduzca sus credenciales) y lo descargaron todo.</p><h2 id="%C2%BFc%C3%B3mo-funciona">¿Cómo funciona?</h2><p>Cuando activas la copia de seguridad de extremo a extremo lo primero que te pide la aplicación es que introduzcas una contraseña o guardes una clave de 64 dígitos que genera la aplicación. Esta clave es que la utilizará para cifrar el contenido de la copia de seguridad antes de enviarla a la nube.</p><p>Primero veamos los dos modos de funcionamiento y después como activarlas en tu teléfono.</p><h3 id="utilizando-una-contrase%C3%B1a-creada-por-el-usuario">Utilizando una contraseña creada por el usuario</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/e2ee-user-password.webp" class="kg-image" alt loading="lazy" width="1536" height="864" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/e2ee-user-password.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/e2ee-user-password.webp 1000w, https://blog.paesa.es/content/images/2022/05/e2ee-user-password.webp 1536w" sizes="(min-width: 720px) 720px"></figure><p>La aplicación de Whatsapp genera una clave de cifrado y esta es protegida con una contraseña proporcionada por el usuario. La clave se almacena en un servidor de Whatsapp y se desbloquea con la contraseña.</p><h3 id="utilizando-una-clave-de-64-d%C3%ADgitos-generada-por-whatsapp">Utilizando una clave de 64 dígitos generada por Whatsapp</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/e2ee-encryption-key.webp" class="kg-image" alt loading="lazy" width="1536" height="864" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/e2ee-encryption-key.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/e2ee-encryption-key.webp 1000w, https://blog.paesa.es/content/images/2022/05/e2ee-encryption-key.webp 1536w" sizes="(min-width: 720px) 720px"></figure><p>En este método la aplicación genera la clave de cifrado y es el usuario el que tiene la responsabilidad de guardarla y protegerla.</p><h2 id="activar-las-copias-e2ee">Activar las copias E2EE</h2><p>El método más sencillo es configurar las copias E2EE con una contraseña del usuario y que la clave de cifrado se guarde en un módulo de seguridad en un servidor de WhatsApp.</p><p>Primero ves a WhatsApp --&gt; Ajustes --&gt; Chats --&gt; Copia de seguridad. Si no aparece la sección "Copia de seguridad cifrada de extremo a extremo" significa que aun no esta activada para tu cuenta.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162696--Blog-.jpg" class="kg-image" alt loading="lazy" width="450" height="783"></figure><p>Pulsa sobre "Copia de seguridad cifrada de extremo a extremo" para iniciar el asistente de configuración.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162703--Blog-.jpg" class="kg-image" alt loading="lazy" width="397" height="800"></figure><p>Pulsa "Activar".</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162717--Blog-.jpg" class="kg-image" alt loading="lazy" width="393" height="800"></figure><p>Aquí puedes elegir una de las dos opciones que hemos visto anteriormente. Esta contraseña es la que necesitaras si quieres restaurar la copia de seguridad en algún momento. Guárdala.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162724--Blog-.jpg" class="kg-image" alt loading="lazy" width="383" height="800"></figure><p>Al finalizar la configuración podrás crear una copia de seguridad con cifrado de extremo a extremo.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162731--Blog-.jpg" class="kg-image" alt loading="lazy" width="450" height="751"></figure><p>Ya tienes un respaldo seguro y privado de todos tus chats de WhatsApp.</p>
-        </section>
+    </header>
+
+    <section class="gh-content gh-canvas">
+        <p>En septiembre de 2021, Facebook, ahora llamado Meta y propietario de Whatsapp LLC anunció que implementaría copias de seguridad de los chats de Whatsapp con cifrado de extremo a extremo (E2EE). </p><p>Desde 2015 Whatsapp cifra todos los mensajes que envían los usuarios utilizando E2EE, eso significa que cada mensaje es cifrado en el dispositivo del emisor con una clave que pertenece al receptor y solo él puede descifrarlo, esto otorga unos grandes beneficios en seguridad y privacidad a los usuarios ya que un tercero, sea este Whatsapp, Facebook, Meta o quien sea no puede ver el contenido de los mensajes aunque estos pasen por sus servidores.</p><p>Una funcionalidad que ofrecen muchas apps de mensajería como Whatsapp es hacer copias de seguridad de los mensajes de tu dispositivo para que en caso de pérdida o daño puedas recuperar todas las conversaciones. Para esto utiliza el servicio de almacenamiento en la nube que ofrece cada plataforma móvil, Google Drive en Android y iCloud en iOS. También hay un acuerdo entre Whatsapp y estos servicios para que esas copias de seguridad no cuenten como espacio utilizado en tu cuenta de Drive o iCloud. Eso está muy bien ¿No?</p><p>Sí, pero tiene un problema de diseño, esa copia de seguridad que se almacena fuera de tu dispositivo <strong>NO</strong> está cifrada.</p><p>A final de 2021, Whatsapp anunció que esta funcionalidad ya estaba lista e iría activando esa opción a los usuarios de forma progresiva.</p><h2 id="%C2%BFpor-qu%C3%A9-deber%C3%ADa-activar-las-copias-de-seguridad-cifradas">¿Por qué debería activar las copias de seguridad cifradas? </h2><p>Mayor seguridad y privacidad son las principales razones, los chats y conversaciones suelen contener mucha información privada o sensible que seguro que quieres mantener protegida. Conversaciones con amigos, familiares, parejas... dentro de ellas puedes encontrarte recibos, documentos (DNI o similar), incluso fotos íntimas (sí, hay gente que manda eso). Eso permitiría a un ciberdelincuente poder suplantar tu identidad o chantajearte con hacer públicas conversaciones y/o fotos privadas.</p><p> Seguro que has oído casos de personalidades famosas que han acabado con conversaciones privadas o fotos íntimas publicadas en la red. ¿Cómo acabaron en manos de un delincuente? Muy sencillo, accedieron a sus cuentas de iCloud utilizando un ataque de phishing (una web o email haciéndose pasar por esa empresa y engañar al usuario para que introduzca sus credenciales) y lo descargaron todo.</p><h2 id="%C2%BFc%C3%B3mo-funciona">¿Cómo funciona?</h2><p>Cuando activas la copia de seguridad de extremo a extremo lo primero que te pide la aplicación es que introduzcas una contraseña o guardes una clave de 64 dígitos que genera la aplicación. Esta clave es que la utilizará para cifrar el contenido de la copia de seguridad antes de enviarla a la nube.</p><p>Primero veamos los dos modos de funcionamiento y después como activarlas en tu teléfono.</p><h3 id="utilizando-una-contrase%C3%B1a-creada-por-el-usuario">Utilizando una contraseña creada por el usuario</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/e2ee-user-password.webp" class="kg-image" alt loading="lazy" width="1536" height="864" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/e2ee-user-password.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/e2ee-user-password.webp 1000w, https://blog.paesa.es/content/images/2022/05/e2ee-user-password.webp 1536w" sizes="(min-width: 720px) 720px"></figure><p>La aplicación de Whatsapp genera una clave de cifrado y esta es protegida con una contraseña proporcionada por el usuario. La clave se almacena en un servidor de Whatsapp y se desbloquea con la contraseña.</p><h3 id="utilizando-una-clave-de-64-d%C3%ADgitos-generada-por-whatsapp">Utilizando una clave de 64 dígitos generada por Whatsapp</h3><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/e2ee-encryption-key.webp" class="kg-image" alt loading="lazy" width="1536" height="864" srcset="https://blog.paesa.es/content/images/size/w600/2022/05/e2ee-encryption-key.webp 600w, https://blog.paesa.es/content/images/size/w1000/2022/05/e2ee-encryption-key.webp 1000w, https://blog.paesa.es/content/images/2022/05/e2ee-encryption-key.webp 1536w" sizes="(min-width: 720px) 720px"></figure><p>En este método la aplicación genera la clave de cifrado y es el usuario el que tiene la responsabilidad de guardarla y protegerla.</p><h2 id="activar-las-copias-e2ee">Activar las copias E2EE</h2><p>El método más sencillo es configurar las copias E2EE con una contraseña del usuario y que la clave de cifrado se guarde en un módulo de seguridad en un servidor de WhatsApp.</p><p>Primero ves a WhatsApp --&gt; Ajustes --&gt; Chats --&gt; Copia de seguridad. Si no aparece la sección "Copia de seguridad cifrada de extremo a extremo" significa que aun no esta activada para tu cuenta.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162696--Blog-.jpg" class="kg-image" alt loading="lazy" width="450" height="783"></figure><p>Pulsa sobre "Copia de seguridad cifrada de extremo a extremo" para iniciar el asistente de configuración.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162703--Blog-.jpg" class="kg-image" alt loading="lazy" width="397" height="800"></figure><p>Pulsa "Activar".</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162717--Blog-.jpg" class="kg-image" alt loading="lazy" width="393" height="800"></figure><p>Aquí puedes elegir una de las dos opciones que hemos visto anteriormente. Esta contraseña es la que necesitaras si quieres restaurar la copia de seguridad en algún momento. Guárdala.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162724--Blog-.jpg" class="kg-image" alt loading="lazy" width="383" height="800"></figure><p>Al finalizar la configuración podrás crear una copia de seguridad con cifrado de extremo a extremo.</p><figure class="kg-card kg-image-card"><img src="https://blog.paesa.es/content/images/2022/05/1644332162731--Blog-.jpg" class="kg-image" alt loading="lazy" width="450" height="751"></figure><p>Ya tienes un respaldo seguro y privado de todos tus chats de WhatsApp.</p>
+    </section>
 
 
-    </article>
+</article>
 </main>
 
 
 
 
-            <aside class="read-more-wrap">
+            <aside class="read-more-wrap outer">
                 <div class="read-more inner">
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/evadir-censura-snowflake/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/snowflake-schematic.webp 300w,
                     /content/images/size/w600/2022/05/snowflake-schematic.webp 600w,
@@ -205,39 +208,41 @@
             alt="Ayuda a evadir la censura en Internet con Snowflake"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/evadir-censura-snowflake/">
             <header class="post-card-header">
-                <h2 class="post-card-title">Ayuda a evadir la censura en Internet con Snowflake</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Ayuda a evadir la censura en Internet con Snowflake
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>La censura en Internet mediante el bloqueo o la limitación del acceso al contenido online es una tendencia creciente especialmente en países con gobiernos autocráticos o totalitarias como una forma de controlar el discurso político y minar los esfuerzos de disidentes y periodistas. China, Irán, Rusia o Turquía son ejemplos</p>
-            </div>
+                <div class="post-card-excerpt">La censura en Internet mediante el bloqueo o la limitación del acceso al
+contenido online es una tendencia creciente especialmente en países con
+gobiernos autocráticos o totalitarias como una forma de controlar el discurso
+político y minar los esfuerzos de disidentes y periodistas. China, Irán, Rusia o
+Turquía son ejemplos</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2022-03-04">4 de mar. de 2022</time> <span class="bull">&bull;</span> 2 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2022-03-04">4 de mar. de 2022</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">2 min read</span>
         </footer>
 
     </div>
 
 </article>
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/dns-seguro-en-android/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/android-dot.webp 300w,
                     /content/images/size/w600/2022/05/android-dot.webp 600w,
@@ -248,39 +253,42 @@
             alt="Activa el DNS Privado en Android"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/dns-seguro-en-android/">
             <header class="post-card-header">
-                <h2 class="post-card-title">Activa el DNS Privado en Android</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Activa el DNS Privado en Android
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>El protocolo DNS (Domain Name System) es un pilar fundamental de Internet que traduce los nombres de dominio como google.com o twitter.com a direcciones IP como 142.250.178.174 o 104.244.42.1. ¿Qué es el DNS?Todos los dispositivos conectados a Internet (o cualquier red)</p>
-            </div>
+                <div class="post-card-excerpt">El protocolo DNS (Domain Name System) es un pilar fundamental de Internet que
+traduce los nombres de dominio como google.com o twitter.com a direcciones IP
+como 142.250.178.174 o 104.244.42.1.
+
+¿Qué es el DNS?
+Todos los dispositivos conectados a Internet (o cualquier red)</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2022-01-09">9 de ene. de 2022</time> <span class="bull">&bull;</span> 3 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2022-01-09">9 de ene. de 2022</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">3 min read</span>
         </footer>
 
     </div>
 
 </article>
                         
-<article class="post-card post ">
+<article class="post-card post">
 
     <a class="post-card-image-link" href="/newpipe-youtube-anuncios/">
+
         <img class="post-card-image"
             srcset="/content/images/size/w300/2022/05/alexander-shatov-niUkImZcSP8-unsplash.webp 300w,
                     /content/images/size/w600/2022/05/alexander-shatov-niUkImZcSP8-unsplash.webp 600w,
@@ -291,30 +299,33 @@
             alt="NewPipe - Más YouTube y menos anuncios"
             loading="lazy"
         />
+
+
     </a>
 
     <div class="post-card-content">
 
         <a class="post-card-content-link" href="/newpipe-youtube-anuncios/">
             <header class="post-card-header">
-                <h2 class="post-card-title">NewPipe - Más YouTube y menos anuncios</h2>
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    NewPipe - Más YouTube y menos anuncios
+                </h2>
             </header>
-            <div class="post-card-excerpt">
-                <p>YouTube es de los servicios más utilizados para ver contenido en Internet, cada día se visualizan millones de horas –muchas de ellas anuncios– de contenido en la plataforma en todo el mundo. ¿Qué es NewPipe?NewPipe es un cliente alternativo gratuito y código abierto para YouTube en Android. Ofrece muchas</p>
-            </div>
+                <div class="post-card-excerpt">YouTube es de los servicios más utilizados para ver contenido en Internet, cada
+día se visualizan millones de horas –muchas de ellas anuncios– de contenido en
+la plataforma en todo el mundo.
+
+¿Qué es NewPipe?
+NewPipe es un cliente alternativo gratuito y código abierto para YouTube en
+Android. Ofrece muchas</div>
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                <li class="author-list-item">
-                    <a href="/author/daniel/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-</a>
-                </li>
-            </ul>
-            <div class="post-card-byline-content">
-                <span class="post-card-byline-author"><a href="/author/daniel/">Daniel Paesa</a></span>
-                <span class="post-card-byline-date"><time datetime="2021-12-22">22 de dic. de 2021</time> <span class="bull">&bull;</span> 2 min read</span>
-            </div>
+            <time class="post-card-meta-date" datetime="2021-12-22">22 de dic. de 2021</time>
+                <span class="sep">—</span>
+                <span class="post-card-meta-length">2 min read</span>
         </footer>
 
     </div>
