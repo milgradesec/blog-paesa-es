@@ -2,9 +2,9 @@ name: blog-paesa-es
 
 services:
   ghost:
-    image: ghost:4.48.2
+    image: ghost:5.8.2
     environment:
-      - logging__level=error
+      - logging__level=info
       - logging__transports=["stdout"]
     networks:
       default: null
