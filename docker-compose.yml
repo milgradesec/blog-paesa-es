@@ -2,9 +2,13 @@ name: blog-paesa-es
 
 services:
   ghost:
-    image: ghost:5.8.2
+    image: ghost:5.12.3
     environment:
-      - logging__level=info
+      - database__client=sqlite3
+      - database__connection__filename=content/data/ghost.db
+      - database__useNullAsDefault=true
+      - database__debug=false
+      - logging__level=error
       - logging__transports=["stdout"]
     networks:
       default: null
