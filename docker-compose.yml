@@ -2,7 +2,7 @@ name: blog-paesa-es
 
 services:
   ghost:
-    image: ghost:5.23.0
+    image: ghost:5.25.0
     environment:
       - database__client=sqlite3
       - database__connection__filename=content/data/ghost.db
